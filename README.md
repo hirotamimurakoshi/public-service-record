@@ -1,6 +1,6 @@
 # Hirotami Murakoshi — Public Service & Policy Record
 
-日本語：村越祐民｜政策・行政実績の記録
+日本語：村越祐民｜国政・市政での仕事
 
 ## Purpose
 
@@ -26,7 +26,8 @@ No build tools, framework, third-party JavaScript, remote fonts, tracking pixels
 
 - `/` policy / professional landing page
 - `/profile/` career overview
-- `/policies/` policy index
+- `/national/` national policy and legislative work (liquefaction and criminal justice reform)
+- `/policies/` municipal policy index
 - `/policies/digital/` digital government
 - `/policies/childcare/` childcare
 - `/policies/partnerships/` public-private partnership
