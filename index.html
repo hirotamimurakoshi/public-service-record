@@ -4,94 +4,312 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="color-scheme" content="light">
-  <meta name="description" content="村越祐民が国政・市政で取り組んだ政策、制度づくり、行政改革を、当時の公文書や報道、研究文献などとともに紹介します。">
+  <meta name="description" content="村越祐民が国政・市政で取り組んだ政策と実績。市川市政（2018–2022）の財政・生活支援、子育て、行政DX、防災、地域経済などの成果と、国政での制度創設・立法活動を資料とともに紹介。">
   <link rel="canonical" href="https://hirotamimurakoshi.github.io/public-service-record/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="村越祐民｜国政・市政での仕事">
-  <meta property="og:description" content="国政・市政で取り組んだ政策や行政改革を、当時の資料とともに紹介します。">
+  <meta property="og:description" content="国政での制度創設と、市川市政で実現した政策・行政改革を、分野別に具体的な数字と資料で紹介します。">
   <meta property="og:url" content="https://hirotamimurakoshi.github.io/public-service-record/">
   <link rel="stylesheet" href="assets/site.css">
   <title>村越祐民｜国政・市政での仕事 | Hirotami Murakoshi</title>
+  <!-- このページ専用の追加スタイル。既存の assets/site.css は変更不要です。 -->
+  <style>
+    :root{--portfolio-ink:#17354a;--portfolio-blue:#245b76;--portfolio-line:#dae3e9;--portfolio-bg:#f6f9fb}
+    .overview-hero{padding-bottom:36px}
+    .overview-hero h1{max-width:780px;margin-bottom:17px}
+    .overview-kicker{display:inline-flex;align-items:center;gap:8px;color:#41647b;font-size:12px;letter-spacing:.12em;font-weight:700;margin:0 0 14px}
+    .overview-kicker:before{content:"";display:inline-block;width:21px;height:2px;background:#527d98}
+    .overview-lead{font-size:17px;max-width:790px;color:#334b5c;line-height:1.95;margin:0}
+    .overview-sublead{color:#5d6e7a;font-size:14px;line-height:1.9;margin:13px 0 0;max-width:780px}
+    .hero-quote{margin:23px 0 0;border-left:3px solid #95adbd;padding:5px 0 5px 16px;color:#405a6d;font-size:15px;font-weight:550}
+    .metrics-wrap{margin:32px 0 5px}
+    .metrics-title{font-size:12px;letter-spacing:.12em;color:#597080;font-weight:750;margin:0 0 12px}
+    .metric-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px}
+    .metric-card{border:1px solid #dbe4e9;border-radius:8px;background:#f8fafb;padding:18px 15px 17px}
+    .metric-label{display:block;color:#536b7a;font-size:12px;line-height:1.5;margin:0 0 9px;font-weight:700}
+    .metric-value{display:block;font-size:clamp(21px,2.6vw,28px);font-weight:750;line-height:1.35;letter-spacing:-.025em;color:#173c58;font-variant-numeric:tabular-nums}
+    .metric-context{display:block;font-size:11px;color:#647686;line-height:1.65;margin-top:10px}
+    .metric-arrow{font-size:17px;color:#8298a5;font-weight:500}
+    .section-links{display:flex;flex-wrap:wrap;gap:9px;margin:23px 0 5px}
+    .section-links a{display:inline-flex;align-items:center;padding:7px 13px;border:1px solid #d2dfe6;border-radius:999px;text-decoration:none;background:#fff;color:#36566c;font-weight:600;font-size:12px;line-height:1.5}
+    .section-links a:hover{background:#eef5f8;border-color:#99b6c6}
+    .portfolio-intro{color:#596c7c;font-size:14px;margin:0 0 27px;line-height:1.9}
+    .portfolio-section{margin:0 0 42px;scroll-margin-top:25px}
+    .portfolio-section-head{display:flex;align-items:baseline;gap:12px;border-bottom:1px solid #dbe3e8;padding:0 0 11px;margin:0 0 16px}
+    .portfolio-section-index{color:#91a9b8;font-size:13px;font-weight:750;letter-spacing:.06em;flex:none}
+    .portfolio-section-head h3{margin:0!important;font-size:20px!important;font-weight:680;color:#1a3a50}
+    .portfolio-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+    .portfolio-item{border:1px solid #dde6eb;border-radius:7px;padding:19px 20px 16px;background:#fff;display:flex;flex-direction:column;min-width:0}
+    .portfolio-item.feature{grid-column:span 2;background:#f7fafc;border-color:#c7d9e4;padding:21px 24px}
+    .portfolio-item h4{font-size:16px;line-height:1.62;margin:0 0 8px;font-weight:700;color:#163c55}
+    .portfolio-item p{font-size:14px;line-height:1.88;margin:0 0 13px;color:#364c5b}
+    .portfolio-item .portfolio-detail{font-size:13px;color:#546b7d}
+    #finance .portfolio-item:last-child, #childcare .portfolio-item:last-child{grid-column:span 2}
+    #health .portfolio-item:last-child, #digital .portfolio-item:last-child, #economy .portfolio-item:last-child{grid-column:span 2}
+    .portfolio-sources{margin-top:auto;padding-top:10px;display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;border-top:1px solid #e6edf1}
+    .portfolio-sources a{font-size:12px;font-weight:600;text-decoration:none;color:#27607c}
+    .portfolio-sources a:hover{text-decoration:underline}
+    .portfolio-sources a:after{content:" ↗";font-size:11px;color:#7994a4}
+    .portfolio-kicker{font-size:11px;font-weight:750;letter-spacing:.07em;color:#698091;margin-bottom:8px}
+    .overview-section{margin-top:52px}
+    .overview-section h2{margin-bottom:12px}
+    .primary-note{margin-top:12px;color:#627786;font-size:12px;line-height:1.8}
+    .national-card{grid-column:span 2}
+    .source-footer{margin-top:16px;padding:17px 19px;background:#f5f8fa;border:1px solid #dfe7ec;border-radius:6px;color:#546879;font-size:13px;line-height:1.85}
+    .source-footer p{margin:0 0 7px}
+    .source-footer p:last-child{margin-bottom:0}
+    .text-links{display:flex;flex-wrap:wrap;gap:10px 20px;margin:13px 0 0}
+    .text-links a{font-size:13px}
+    @media(max-width:760px){#finance .portfolio-item:last-child,#childcare .portfolio-item:last-child,#health .portfolio-item:last-child,#digital .portfolio-item:last-child,#economy .portfolio-item:last-child{grid-column:span 1}.metric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.portfolio-grid{grid-template-columns:1fr}.portfolio-item.feature,.national-card{grid-column:span 1}.portfolio-section-head h3{font-size:18px!important}.portfolio-item.feature{padding:18px 19px}.overview-lead{font-size:16px}}
+    @media(max-width:390px){.metric-card{padding:15px 12px}.metric-value{font-size:20px}.portfolio-item{padding:16px}.section-links{gap:7px}}
+  </style>
 </head>
 <body>
-  <a class="skip-link" href="#main">本文へ移動</a>
-  <div class="site-top">
-    <div class="site-top-inner">
-      <a class="site-brand" href="./">
-        <span class="brand-tag">PUBLIC SERVICE &amp; POLICY RECORD</span>
-        <span class="brand-name">村越祐民｜国政・市政での仕事</span>
-      </a>
-      <nav aria-label="メインナビゲーション"><a class="nav-link active" href="./" aria-current="page">概要</a><a class="nav-link" href="profile/">経歴</a><a class="nav-link" href="national/">政策・立法</a><a class="nav-link" href="diplomacy/">外交</a><a class="nav-link" href="policies/">市川市政</a><a class="nav-link" href="publications/">掲載資料</a><a class="nav-link" href="en/">English</a></nav>
+<a class="skip-link" href="#main">本文へ移動</a>
+<div class="site-top">
+  <div class="site-top-inner">
+    <a class="site-brand" href="./">
+      <span class="brand-tag">PUBLIC SERVICE &amp; POLICY RECORD</span>
+      <span class="brand-name">村越祐民｜国政・市政での仕事</span>
+    </a>
+    <nav aria-label="メインナビゲーション">
+      <a class="nav-link active" href="./" aria-current="page">概要</a>
+      <a class="nav-link" href="profile/">経歴</a>
+      <a class="nav-link" href="national/">政策・立法</a>
+      <a class="nav-link" href="diplomacy/">外交</a>
+      <a class="nav-link" href="policies/">市川市政</a>
+      <a class="nav-link" href="publications/">掲載資料</a>
+      <a class="nav-link" href="en/">English</a>
+    </nav>
+  </div>
+</div>
+<main id="main">
+  <header class="hero overview-hero">
+    <p class="overview-kicker">HIROTAMI MURAKOSHI · PUBLIC SERVICE RECORD</p>
+    <h1>国政・市政での仕事</h1>
+    <p class="overview-lead">衆議院議員、外務大臣政務官を経て、2018年4月から2022年4月まで千葉県市川市長を務めました。国の制度づくりから、自治体の財政運営、市民生活を支える政策、行政のデジタル改革まで、取り組んだ仕事とその成果を紹介します。</p>
+    <p class="overview-sublead">このページだけで主な実績がわかるよう、分野別に整理しました。政策の実施時期や数字は、当時の公文書・決算・報道などで確認できる範囲を記載しています。</p>
+  </header>
+
+  <div class="metrics-wrap" aria-labelledby="metrics-heading">
+    <p class="metrics-title" id="metrics-heading">数字で見る市川市政〈2018–2022〉</p>
+    <div class="metric-grid">
+      <div class="metric-card"><span class="metric-label">保育待機児童（国基準）</span><span class="metric-value">385 <span class="metric-arrow">→</span> 0人</span><span class="metric-context">2018年4月 → 2021年4月</span></div>
+      <div class="metric-card"><span class="metric-label">市独自の生活困窮者支援</span><span class="metric-value">10万円</span><span class="metric-context">対象世帯当たり・2021年度創設</span></div>
+      <div class="metric-card"><span class="metric-label">財政調整基金残高</span><span class="metric-value">190 <span class="metric-arrow">→</span> 261億円</span><span class="metric-context">2018年度末 → 2021年度末</span></div>
+      <div class="metric-card"><span class="metric-label">市民体育館の使用料</span><span class="metric-value">3分の1</span><span class="metric-context">国府台第1体育館ほか・2019年改定</span></div>
     </div>
   </div>
 
-  <main id="main">
-    <header class="hero">
-      <p class="eyebrow">HIROTAMI MURAKOSHI</p>
-      <h1>国政・市政での仕事</h1>
-      <p class="lead">衆議院議員、外務大臣政務官を経て、2018年4月から2022年4月まで千葉県市川市長を務めました。</p>
-      <p class="small-lead">このサイトでは、国政での政策・制度づくりや市川市での行政改革などを、当時の公文書や報道、研究文献とともに紹介しています。</p>
-    </header>
+  <nav class="section-links" aria-label="このページの分野別目次">
+    <a href="#city">市川市政</a>
+    <a href="#finance">財政・生活支援</a>
+    <a href="#childcare">子育て・教育</a>
+    <a href="#health">保健・医療</a>
+    <a href="#digital">行政DX</a>
+    <a href="#economy">地域経済</a>
+    <a href="#disaster">防災・環境</a>
+    <a href="#facilities">公共施設</a>
+    <a href="#national">国政・外交</a>
+  </nav>
 
-    <section class="section" id="work">
-      <h2>主な取り組み</h2>
-      <div class="grid">
-        <a class="tile" href="national/#liquefaction">
-          <span class="kicker">NATIONAL DIET · 2011–2012</span>
-          <strong>市街地液状化対策</strong>
-          <span>浦安市の被害を受け、与党内のワーキングチームを組織。国土交通省や専門家と制度づくりに取り組みました。</span>
-        </a>
-        <a class="tile" href="legislation/">
-          <span class="kicker">NATIONAL DIET · 2011</span>
-          <strong>刑事司法制度改革</strong>
-          <span>重無期刑の創設と、死刑判決に全員一致を求める法律案の取りまとめ。</span>
-        </a>
-        <a class="tile" href="diplomacy/">
-          <span class="kicker">FOREIGN AFFAIRS · 2012</span>
-          <strong>外交・国際協力</strong>
-          <span>外務大臣政務官として、TICAD Vに向けた東アフリカ外交や、環境・インフラ分野の国際協力に携わりました。</span>
-        </a>
-        <a class="tile" href="policies/digital/">
-          <span class="kicker">ICHIKAWA CITY · 2018–2022</span>
-          <strong>行政DX・窓口改革</strong>
-          <span>DX憲章の制定、LINEによる住民票申請の実証、「来なくて済む市役所」を目指した窓口改革。</span>
-        </a>
-        <a class="tile" href="policies/childcare/">
-          <span class="kicker">ICHIKAWA CITY · 2018–2022</span>
-          <strong>保育・待機児童対策</strong>
-          <span>保育の受け皿の拡大と、2021年4月の待機児童ゼロ（国基準）。</span>
-        </a>
-        <a class="tile" href="policies/partnerships/">
-          <span class="kicker">ICHIKAWA CITY · 2018–2022</span>
-          <strong>官民連携</strong>
-          <span>民間企業との連携協定や、行政サービスの改善に向けた取り組み。</span>
-        </a>
+  <section class="section overview-section" id="city" aria-labelledby="city-title">
+    <h2 id="city-title">市川市政｜2018–2022年</h2>
+    <p class="portfolio-intro">行政運営の見直しで生み出した財政的・人的資源を、暮らしの支援や新たな行政サービスにつなげる。生活困窮者支援、待機児童対策、保健医療、DX、地域経済、防災、市民サービスの実績を分野別に掲載しています。</p>
+
+    <div class="portfolio-section" id="finance">
+      <div class="portfolio-section-head"><span class="portfolio-section-index">01</span><h3>財政運営・生活困窮者支援</h3></div>
+      <div class="portfolio-grid">
+        <article class="portfolio-item feature">
+          <div class="portfolio-kicker">2021年制度創設｜市独自事業</div>
+          <h4>国の10万円給付から漏れた低所得世帯を、市独自に支援</h4>
+          <p>国の住民税非課税世帯等への給付の対象とならない低所得の課税世帯に対し、「いちかわ生活よりそい臨時特別給付金」を創設。世帯の合計所得200万円以下などの要件を満たす世帯に、1世帯当たり10万円を給付する制度を設けました。約4万世帯を対象に想定し、事務費を含め約40.7億円を予算化しました。</p>
+          <div class="portfolio-sources"><a href="https://www.city.ichikawa.lg.jp/site/kohoichikawa/5888.html" target="_blank" rel="noopener noreferrer">市川市・給付制度の説明</a><a href="https://www.city.ichikawa.lg.jp/site/kohoichikawa/5835.html" target="_blank" rel="noopener noreferrer">広報いちかわ（2022年1月）</a></div>
+        </article>
+        <article class="portfolio-item">
+          <div class="portfolio-kicker">2018年度末 → 2021年度末</div>
+          <h4>財政調整基金を190億円から261億円へ</h4>
+          <p>危機への備えとなる財政調整基金は、在任中の2018年度末の約190億円から2021年度末の約261億円に増加。歳出・事業の見直しと、市民サービスの充実の両立に取り組みました。</p>
+          <p class="portfolio-detail">基金増加には税収や決算剰余金の動向も影響しており、増加額をすべて歳出削減の成果としているものではありません。</p>
+          <div class="portfolio-sources"><a href="https://www.city.ichikawa.lg.jp/page/7651.html" target="_blank" rel="noopener noreferrer">市川市・財政資料</a><a href="https://www.city.ichikawa.lg.jp/page/4122.html" target="_blank" rel="noopener noreferrer">年度別決算</a></div>
+        </article>
       </div>
-    </section>
+    </div>
 
-    <section class="section">
-      <h2>報道・公的資料など</h2>
-      <p>新聞や専門誌の記事、行政機関の文書、企業による事例紹介、学術論文へのリンクを分野別にまとめています。</p>
-      <div class="grid">
-        <a class="tile" href="publications/">
-          <span class="kicker">SOURCES</span>
-          <strong>掲載記事・公開資料</strong>
-          <span>国政・市政での活動に関する報道、行政資料、研究文献など。</span>
-        </a>
-        <a class="tile" href="en/">
-          <span class="kicker">ENGLISH</span>
-          <strong>English Profile</strong>
-          <span>Career and selected work in national and local government.</span>
-        </a>
+    <div class="portfolio-section" id="childcare">
+      <div class="portfolio-section-head"><span class="portfolio-section-index">02</span><h3>子育て・教育</h3></div>
+      <div class="portfolio-grid">
+        <article class="portfolio-item feature">
+          <div class="portfolio-kicker">2018–2021年｜国基準</div>
+          <h4>待機児童ゼロを達成</h4>
+          <p>就任時の2018年4月に385人だった保育待機児童を、保育施設の整備や受け入れ体制の拡充によって、2021年4月に国基準でゼロにしました。保育施設の利用定員は2018年4月の8,900人から2022年4月には12,623人に増加し、同月も待機児童ゼロを維持しました。</p>
+          <div class="portfolio-sources"><a href="https://www.city.ichikawa.lg.jp/page/2492.html" target="_blank" rel="noopener noreferrer">市川市・待機児童数の推移</a><a href="policies/childcare/">取り組みの詳細</a></div>
+        </article>
+        <article class="portfolio-item">
+          <div class="portfolio-kicker">2020–2022年</div>
+          <h4>学校教育のICT環境を整備</h4>
+          <p>国のGIGAスクール構想に対応し、市立小中学校の学習用端末と通信環境の整備を進めました。2021年度には小学4年生から中学3年生への端末配布を実施し、低学年への配備にも着手しました。</p>
+          <div class="portfolio-sources"><a href="https://www.city.ichikawa.lg.jp/common/edu07/file/0000376449.pdf" target="_blank" rel="noopener noreferrer">市川市教育委員会の案内</a></div>
+        </article>
       </div>
-    </section>
+    </div>
 
-    <section class="section">
-      <h2>このサイトについて</h2>
-      <p>このサイトは村越祐民本人が運営しています。取り組みの経緯や実施内容を確認できるよう、できる限り当時の資料とともに紹介しています。</p>
-      <p>訴訟に関する経緯と資料は、別サイト<a href="https://hirotamimurakoshi.github.io/" target="_blank" rel="noopener noreferrer">「公的資料・訴訟記録」<span aria-hidden="true" class="external">↗</span></a>に掲載しています。</p>
-    </section>
-  </main>
-  <footer><div class="footer-inner"><p>© 2026 Hirotami Murakoshi</p></div></footer>
+    <div class="portfolio-section" id="health">
+      <div class="portfolio-section-head"><span class="portfolio-section-index">03</span><h3>保健・医療・感染症対策</h3></div>
+      <div class="portfolio-grid">
+        <article class="portfolio-item">
+          <div class="portfolio-kicker">2019年以降</div>
+          <h4>不妊治療費の市独自助成を拡充</h4>
+          <p>高額な不妊治療費の負担を軽減するため、県制度への上乗せ助成と市独自の助成を実施。保険適用外の治療を受ける人への支援を進め、対象を広げました。</p>
+          <div class="portfolio-sources"><a href="https://www.city.ichikawa.lg.jp/uploaded/attachment/8868.pdf" target="_blank" rel="noopener noreferrer">2019年度の施策成果報告</a></div>
+        </article>
+        <article class="portfolio-item">
+          <div class="portfolio-kicker">2020年｜市独自の対応</div>
+          <h4>新型コロナの自宅療養者に生活物資を届ける</h4>
+          <p>感染者やその家族が自宅で療養できるよう、食料品などを市職員が届ける生活支援を実施。感染症対策を、市民の日常生活を支える施策と一体で進めました。</p>
+          <div class="portfolio-sources"><a href="https://www.city.ichikawa.lg.jp/site/kohoichikawa/6109.html" target="_blank" rel="noopener noreferrer">広報いちかわ（2020年6月）</a></div>
+        </article>
+        <article class="portfolio-item">
+          <div class="portfolio-kicker">2021–2022年</div>
+          <h4>ワクチン接種体制の整備</h4>
+          <p>新型コロナワクチン接種の実施に向け、医療機関等と調整して市の接種体制を整備。感染拡大下での保健行政と市民対応を進めました。</p>
+          <div class="portfolio-sources"><a href="https://www.city.ichikawa.lg.jp/page/4122.html" target="_blank" rel="noopener noreferrer">市川市・決算と施策成果</a></div>
+        </article>
+      </div>
+    </div>
+
+    <div class="portfolio-section" id="digital">
+      <div class="portfolio-section-head"><span class="portfolio-section-index">04</span><h3>行政DX・オープンイノベーション</h3></div>
+      <div class="portfolio-grid">
+        <article class="portfolio-item feature">
+          <div class="portfolio-kicker">2020年策定｜行政改革の基本方針</div>
+          <h4>「来なくて済む市役所」「24時間止まらない電子市役所」を構想</h4>
+          <p>行政の仕事そのものを見直すため「市川市DX憲章」を策定。単なる手続きの電子化ではなく、業務の無駄を減らして行政資源を新しい価値の創造に振り向ける改革を掲げました。「24時間止まらない電子市役所」は将来目標とし、在任中は電子申請・窓口改革を具体化しました。</p>
+          <div class="portfolio-sources"><a href="https://www.city.ichikawa.lg.jp/page/2866.html" target="_blank" rel="noopener noreferrer">市川市DX憲章（2020年）</a><a href="policies/digital/">取り組みの詳細</a></div>
+        </article>
+        <article class="portfolio-item">
+          <div class="portfolio-kicker">2019年｜全国初の実証</div>
+          <h4>LINEで住民票を申請し、郵送で受け取る</h4>
+          <p>LINE上で住民票の写し等を申請し、手数料をキャッシュレス決済して郵送で受け取る仕組みの全国初の実証実験を開始。民間の技術を取り入れ、来庁を要しない行政サービスを試みました。</p>
+          <div class="portfolio-sources"><a href="https://www.watch.impress.co.jp/docs/news/1175856.html" target="_blank" rel="noopener noreferrer">Impress Watch（2019年）</a></div>
+        </article>
+        <article class="portfolio-item">
+          <div class="portfolio-kicker">2021年｜新第1庁舎</div>
+          <h4>複数の手続きを一か所で済ませる窓口へ</h4>
+          <p>転入・転出や出生などの手続きを、できる限り一つの窓口で進められるワンストップサービスを導入。新第1庁舎の機能・レイアウトも、窓口改革と一体で見直しました。</p>
+          <div class="portfolio-sources"><a href="https://www.city.ichikawa.lg.jp/page/6924.html" target="_blank" rel="noopener noreferrer">2020年度決算審査意見書</a></div>
+        </article>
+        <article class="portfolio-item">
+          <div class="portfolio-kicker">行政サービスの再設計</div>
+          <h4>民間の知見を行政に取り込む</h4>
+          <p>LINE等の民間サービスを活用した申請・決済や、民間企業との連携を通じた業務改革を推進。行政だけで技術を抱え込まず、外部の技術と発想を取り入れる形でサービス改善に取り組みました。</p>
+          <div class="portfolio-sources"><a href="https://www.projectdesign.jp/202105/ict-utilization-chief-roundtable/009324.php" target="_blank" rel="noopener noreferrer">事業構想（2021年）</a><a href="policies/partnerships/">官民連携の詳細</a></div>
+        </article>
+      </div>
+    </div>
+
+    <div class="portfolio-section" id="economy">
+      <div class="portfolio-section-head"><span class="portfolio-section-index">05</span><h3>地域経済・事業者支援</h3></div>
+      <div class="portfolio-grid">
+        <article class="portfolio-item">
+          <div class="portfolio-kicker">2020年</div>
+          <h4>PayPayを活用した市内消費の喚起</h4>
+          <p>コロナ禍の地域経済を支えるため、市内の対象店舗でPayPay決済額の最大10％を還元するキャンペーンを実施。紙の商品券ではなく、既存のキャッシュレス基盤を活用した経済対策を進めました。</p>
+          <div class="portfolio-sources"><a href="https://about.paypay.ne.jp/pr/20200706/01/" target="_blank" rel="noopener noreferrer">PayPay公式発表（2020年）</a></div>
+        </article>
+        <article class="portfolio-item">
+          <div class="portfolio-kicker">2020年｜市独自支援</div>
+          <h4>感染症対策を行う中小事業者を支援</h4>
+          <p>休業・短時間営業、消毒、感染症対策用品の購入、テレワーク導入などに取り組む市内の中小法人や個人事業主へ、上限20万円の臨時給付金を設けました。</p>
+          <div class="portfolio-sources"><a href="https://www.city.ichikawa.lg.jp/site/kohoichikawa/6109.html" target="_blank" rel="noopener noreferrer">広報いちかわ（2020年6月）</a></div>
+        </article>
+        <article class="portfolio-item">
+          <div class="portfolio-kicker">2021年｜市独自支援</div>
+          <h4>売上減少に直面した事業者への継続支援</h4>
+          <p>感染症の影響で売上が減少した市内の中小法人等に、最大25万円の事業継続支援金を給付。個人事業主やNPO法人等も含め、国や県の給付制度との関係を踏まえて支援しました。</p>
+          <div class="portfolio-sources"><a href="https://www.city.ichikawa.lg.jp/site/kohoichikawa/6245.html" target="_blank" rel="noopener noreferrer">広報いちかわ（2021年9月）</a></div>
+        </article>
+      </div>
+    </div>
+
+    <div class="portfolio-section" id="disaster">
+      <div class="portfolio-section-head"><span class="portfolio-section-index">06</span><h3>防災・生活環境</h3></div>
+      <div class="portfolio-grid">
+        <article class="portfolio-item">
+          <div class="portfolio-kicker">2018–2022年</div>
+          <h4>災害時の支援ネットワークを拡充</h4>
+          <p>災害時の物資供給、避難場所の確保、応急対応などに備え、自治体や民間事業者等との協定を拡充。行政内部だけでは対応できない災害への備えを進めました。</p>
+          <div class="portfolio-sources"><a href="https://www.city.ichikawa.lg.jp/common/cri03/file/0000474444.pdf" target="_blank" rel="noopener noreferrer">市川市・災害時支援協定資料</a></div>
+        </article>
+        <article class="portfolio-item">
+          <div class="portfolio-kicker">2020–2021年</div>
+          <h4>燃やすごみの週3回収集を実施</h4>
+          <p>在宅時間が増えたコロナ禍に、ごみの保管負担と衛生上の懸念に対応するため収集回数を拡大。2021年度も週3回の収集体制を実施しました。</p>
+          <div class="portfolio-sources"><a href="https://www.city.ichikawa.lg.jp/page/1294.html" target="_blank" rel="noopener noreferrer">市川市・市民アンケート</a><a href="https://www.city.ichikawa.lg.jp/site/gikai/1896.html" target="_blank" rel="noopener noreferrer">市議会だより</a></div>
+        </article>
+      </div>
+    </div>
+
+    <div class="portfolio-section" id="facilities">
+      <div class="portfolio-section-head"><span class="portfolio-section-index">07</span><h3>公共施設・市民サービス</h3></div>
+      <div class="portfolio-grid">
+        <article class="portfolio-item">
+          <div class="portfolio-kicker">2019年4月</div>
+          <h4>公民館や体育館の使用料を引き下げ</h4>
+          <p>公共施設を使いやすくするため、使用料体系を見直しました。国府台市民体育館・第1体育館の市民等の一般使用料は、1時間6,570円から2,190円へ、従来の3分の1に引き下げました。</p>
+          <div class="portfolio-sources"><a href="https://www.city.ichikawa.lg.jp/page/5687.html" target="_blank" rel="noopener noreferrer">市川市・使用料改定</a></div>
+        </article>
+        <article class="portfolio-item">
+          <div class="portfolio-kicker">2021年</div>
+          <h4>新第1庁舎の全面供用と窓口機能の改革</h4>
+          <p>新第1庁舎の全面供用に合わせ、窓口の集約やワンストップサービスを導入。災害時に業務継続を支える機能と、平常時の使いやすさを備えた庁舎運営を進めました。</p>
+          <div class="portfolio-sources"><a href="https://www.city.ichikawa.lg.jp/page/6924.html" target="_blank" rel="noopener noreferrer">市川市・決算審査意見書</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section overview-section" id="national" aria-labelledby="national-title">
+    <h2 id="national-title">国政・外交｜制度づくりと政策提案</h2>
+    <p class="portfolio-intro">衆議院議員時代の制度創設への働きかけ、刑事司法改革の法律案の取りまとめ、外務大臣政務官としての外交活動を紹介します。</p>
+    <div class="portfolio-grid">
+      <article class="portfolio-item national-card feature" id="liquefaction">
+        <div class="portfolio-kicker">2011年｜国の事業制度の創設</div>
+        <h4>市街地液状化対策事業を発案し、制度創設を主導</h4>
+        <p>東日本大震災で深刻な液状化被害を受けた浦安市の状況を踏まえ、道路などの公共施設と民間宅地を一体的に対策する国の事業制度を発案。国土交通省や関係者との調整・制度づくりを主導し、2011年の「市街地液状化対策事業」の創設につなげました。制度はその後も国の液状化対策の枠組みとして引き継がれています。</p>
+        <div class="portfolio-sources"><a href="https://www.mlit.go.jp/toshi/toshi_tobou_fr_000005.html" target="_blank" rel="noopener noreferrer">国土交通省・制度とガイダンス</a><a href="national/#liquefaction">国政での経緯・資料</a></div>
+      </article>
+      <article class="portfolio-item national-card">
+        <div class="portfolio-kicker">2011年｜刑事司法制度改革</div>
+        <h4>裁判員裁判の死刑判決に全員一致を求める法律案を取りまとめ</h4>
+        <p>死刑廃止を推進する議員連盟の事務局長として、重無期刑の創設と、裁判員裁判で死刑判決を下す際に裁判官・裁判員全員の一致を求める仕組みを盛り込んだ法律案を取りまとめました。2011年8月、法務省の「死刑の在り方についての勉強会」で法律案や新旧対照条文などを提示しました。</p>
+        <div class="portfolio-sources"><a href="https://www.moj.go.jp/keiji1/keiji12_00036.html" target="_blank" rel="noopener noreferrer">法務省・第7回勉強会</a><a href="legislation/">法律案の資料</a></div>
+      </article>
+      <article class="portfolio-item national-card">
+        <div class="portfolio-kicker">2012年｜外務大臣政務官</div>
+        <h4>東アフリカ外交と国際協力</h4>
+        <p>外務大臣政務官としてタンザニアとウガンダを訪問し、大統領や政府要人との会談を実施。第5回アフリカ開発会議（TICAD V）に向けた働きかけなど、二国間関係の強化と国際協力に携わりました。</p>
+        <div class="portfolio-sources"><a href="https://www.mofa.go.jp/mofaj/gaiko/bluebook/2013/pdf/pdfs/6.pdf" target="_blank" rel="noopener noreferrer">外務省・2012年要人往来記録</a><a href="diplomacy/">外交活動の詳細</a></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="sources" aria-labelledby="sources-title">
+    <h2 id="sources-title">報道・公的資料など</h2>
+    <p>本文には、それぞれの施策を確認できる当時の公文書、決算資料、報道などへのリンクを付けています。国政・市政の資料をまとめて探す場合は、掲載資料のページをご覧ください。</p>
+    <div class="text-links"><a href="publications/">掲載記事・公開資料を見る</a><a href="profile/">経歴を見る</a><a href="en/">English Profile</a></div>
+    <div class="source-footer">
+      <p><strong>記述について</strong>　このサイトは村越祐民本人が運営しています。任期中の行政実績には、職員・議会・市民・関係機関や、それ以前から進められてきた事業の継続も含まれます。</p>
+      <p>計画・構想と実施済みの施策は区別して記載しています。財政数値は各年度末の決算、給付金の「約4万世帯」「約40.7億円」は制度創設時の対象見込み・予算額です。制度創設における本人の役割については、本人の活動記録と公的資料を合わせて掲載しています。</p>
+    </div>
+  </section>
+
+  <section class="section" id="about" aria-labelledby="about-title">
+    <h2 id="about-title">このサイトについて</h2>
+    <p>政策・行政の仕事を、できる限り当時の資料と照合しながら紹介しています。新たな資料の確認に応じ、記述を更新します。</p>
+    <p>訴訟に関する経緯と資料は、別サイト<a href="https://hirotamimurakoshi.github.io/" target="_blank" rel="noopener noreferrer">「公的資料・訴訟記録」<span aria-hidden="true" class="external">↗</span></a>に掲載しています。</p>
+  </section>
+</main>
+<footer><div class="footer-inner"><p>© 2026 Hirotami Murakoshi</p><p>Public service &amp; policy record / 2011–2022</p></div></footer>
 </body>
 </html>
