@@ -97,7 +97,7 @@ body h1,body h2,body h3,body h4{color:var(--rp-ink);line-height:1.48;letter-spac
 .rp-section{padding-top:38px}
 .rp-section>h2{font-size:clamp(23px,3vw,27px)}
 .rp-section-lead{margin-bottom:19px}
-.rp-tile-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:19px}
+.rp-tile-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:19px}
 .rp-tile{border:1px solid var(--rp-line);border-radius:7px;background:#fff;min-width:0;min-height:142px;display:flex;flex-direction:column}
 .rp-tile a{display:flex;flex:1;flex-direction:column;padding:18px 17px 15px;color:inherit;text-decoration:none}
 .rp-tile a:hover,.rp-tile a:focus-visible{background:#f5f9fb;outline-color:#5686a0}
@@ -126,25 +126,36 @@ body h1,body h2,body h3,body h4{color:var(--rp-ink);line-height:1.48;letter-spac
 .rp-policy-detail summary:focus-visible,.rp-issue details summary:focus-visible{outline:2px solid #5686a0;outline-offset:4px}
 @media(max-width:970px){.rp-tile-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:690px){.rp-tile-grid{grid-template-columns:1fr;gap:9px}.rp-tile{min-height:0}.rp-tile a{padding:15px 16px 13px}.rp-tile h3{margin-bottom:4px}.rp-tile p{margin-bottom:6px}.rp-hero .rp-lead{font-size:15px}.rp-breadcrumb{margin-top:20px}}
+
+/* Single unobtrusive link to the concise achievements summary */
+.rp-feature-link{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;padding:17px 19px;margin-top:24px;border:1px solid #d0dfe7;border-radius:7px;background:#f7fafc}
+.rp-feature-link h2{font-size:17px;margin:0 0 3px}
+.rp-feature-link p{font-size:12px;color:#607989;line-height:1.75;margin:0}
+.rp-feature-link a{white-space:nowrap;font-size:13px;font-weight:720}
+@media(max-width:690px){.rp-feature-link{align-items:flex-start;gap:9px;padding:15px 16px}}
 </style>
 </head>
 <body class="rp-home">
 <a class="rp-skip" href="#main">本文へ移動</a>
 <header class="rp-header"><div class="rp-header-inner">
 <a class="rp-brand" href="index.html"><span>PUBLIC SERVICE &amp; POLICY RECORD</span><span>村越祐民｜国政・市政での仕事</span></a>
-<nav class="rp-nav" aria-label="メインナビゲーション"><a href="index.html">概要</a><a href="index.html#city">市川市長としての4年間</a><a href="index.html#national">国政・外交</a><a href="index.html#assessment">報道と評価</a><a href="profile/">経歴</a><a href="publications/">資料・記録</a><a href="en/">English</a></nav>
+<nav class="rp-nav" aria-label="メインナビゲーション"><a href="index.html">概要</a><a href="selected-achievements/">主な仕事と成果</a><a href="index.html#city">市川市長としての4年間</a><a href="index.html#national">国政・外交</a><a href="index.html#assessment">報道と評価</a><a href="profile/">経歴</a><a href="publications/">資料・記録</a><a href="en/">English</a></nav>
 </div></header>
 <main id="main" class="rp-container">
 <section class="rp-hero" aria-labelledby="main-title">
 <p class="rp-eyebrow">HIROTAMI MURAKOSHI · PUBLIC SERVICE RECORD</p>
 <h1 id="main-title">国政・市政での仕事</h1>
-<div class="rp-lead"><p>衆議院議員、外務大臣政務官を経て、2018年4月から2022年4月まで市川市長を務めました。</p>
-<p>市長在任中の公用車や市長室の設備をめぐる問題は、繰り返し報じられてきました。その一方で、私が国政や市政で実際に何を行い、何を実現したのかについては、十分に知られているとは思いません。市長時代の実績がほとんどなかったかのような評価もあります。</p>
-<p>このサイトでは、そうした評価についても考えていただけるよう、国政・市政で取り組んだ政策とその成果を、客観的な資料とともに紹介します。</p></div>
+<div class="rp-lead"><p>私は衆議院議員・外務大臣政務官を経て、2018年4月から2022年4月まで市川市長を務めました。</p>
+<p>市長在任中の「テスラ導入」や「シャワー室」をめぐる問題は、繰り返し報じられてきました。その一方で、私が国政や市政で実際に何を行い、何を実現したのかについては、十分に伝えられていません。市長時代の実績がほとんどなかったかのような評価すらあります。</p>
+<p>このサイトでは、国政・市政で私が取り組んだ政策とその成果を、客観的な資料とともに紹介します。</p></div>
+</section>
+<section class="rp-feature-link" aria-labelledby="selected-achievements-link-title">
+<div><h2 id="selected-achievements-link-title">主な仕事と成果</h2><p>代表的な7件を選び、成果・役割・根拠資料を簡潔にまとめました。</p></div>
+<a href="selected-achievements/">代表的な実績を一覧する →</a>
 </section>
 <section class="rp-section" id="city" aria-labelledby="city-title">
 <h2 id="city-title">市川市長としての4年間</h2>
-<p class="rp-section-lead">2018年4月から2022年4月までの市川市政で取り組んだ政策を、8つの分野に整理しました。各分野のページでは、施策ごとの経緯と根拠資料を掲載しています。</p>
+<p class="rp-section-lead">2018年4月から2022年4月までの市川市政で取り組んだ政策を、9つの分野に整理しました。各分野のページでは、施策ごとの経緯と根拠資料を掲載しています。</p>
 <div class="rp-tile-grid"><article class="rp-tile"><a href="city-record/finance/"><span class="rp-tile-num">01</span><h3>財政・生活支援</h3><p>市独自の生活支援制度と財政運営</p><span class="rp-tile-more">取り組みを見る →</span></a></article>
 <article class="rp-tile"><a href="city-record/childcare/"><span class="rp-tile-num">02</span><h3>子育て・教育</h3><p>待機児童対策と学校の学習環境</p><span class="rp-tile-more">取り組みを見る →</span></a></article>
 <article class="rp-tile"><a href="city-record/health/"><span class="rp-tile-num">03</span><h3>保健・医療</h3><p>不妊治療支援と新型コロナ対応</p><span class="rp-tile-more">取り組みを見る →</span></a></article>
@@ -152,7 +163,8 @@ body h1,body h2,body h3,body h4{color:var(--rp-ink);line-height:1.48;letter-spac
 <article class="rp-tile"><a href="city-record/economy/"><span class="rp-tile-num">05</span><h3>地域経済</h3><p>キャッシュレス施策と事業者支援</p><span class="rp-tile-more">取り組みを見る →</span></a></article>
 <article class="rp-tile"><a href="city-record/disaster/"><span class="rp-tile-num">06</span><h3>防災・環境</h3><p>災害への備えと生活環境の改善</p><span class="rp-tile-more">取り組みを見る →</span></a></article>
 <article class="rp-tile"><a href="city-record/facilities/"><span class="rp-tile-num">07</span><h3>公共施設</h3><p>利用負担の見直しと庁舎の機能</p><span class="rp-tile-more">取り組みを見る →</span></a></article>
-<article class="rp-tile"><a href="city-record/culture/"><span class="rp-tile-num">08</span><h3>文化・シビックプライド</h3><p>本や文学、地域文化を通じたまちへの愛着</p><span class="rp-tile-more">取り組みを見る →</span></a></article></div>
+<article class="rp-tile"><a href="city-record/culture/"><span class="rp-tile-num">08</span><h3>文化・シビックプライド</h3><p>本や文学、地域文化を通じたまちへの愛着</p><span class="rp-tile-more">取り組みを見る →</span></a></article>
+<article class="rp-tile"><a href="city-record/international/"><span class="rp-tile-num">09</span><h3>国際交流</h3><p>海外都市との協定、文化発信、企業間交流</p><span class="rp-tile-more">取り組みを見る →</span></a></article></div>
 </section>
 <section class="rp-section rp-divider-top" id="national" aria-labelledby="national-title">
 <h2 id="national-title">国政・外交での仕事</h2>
