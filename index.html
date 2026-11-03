@@ -133,13 +133,23 @@ body h1,body h2,body h3,body h4{color:var(--rp-ink);line-height:1.48;letter-spac
 .rp-feature-link p{font-size:12px;color:#607989;line-height:1.75;margin:0}
 .rp-feature-link a{white-space:nowrap;font-size:13px;font-weight:720}
 @media(max-width:690px){.rp-feature-link{align-items:flex-start;gap:9px;padding:15px 16px}}
+
+/* Three compact evidence cards; details live on separate pages. */
+.rp-issue{display:flex;flex-direction:column;min-height:205px}
+.rp-issue-index{font-size:11px;font-weight:750;color:#89a0af;margin-bottom:8px}
+.rp-issue h3{font-size:16px;line-height:1.55;margin-bottom:10px}
+.rp-issue>p{margin:0 0 14px}
+.rp-issue-link{display:block;border-top:1px solid var(--rp-line);margin-top:auto;padding-top:10px;font-size:12px;font-weight:700;line-height:1.8;text-decoration:none}
+.rp-issue-link:hover{text-decoration:underline}
+.rp-issue-link:focus-visible{outline:2px solid #5686a0;outline-offset:4px}
+@media(max-width:820px){.rp-issue{min-height:0}}
 </style>
 </head>
 <body class="rp-home">
 <a class="rp-skip" href="#main">本文へ移動</a>
 <header class="rp-header"><div class="rp-header-inner">
 <a class="rp-brand" href="index.html"><span>PUBLIC SERVICE &amp; POLICY RECORD</span><span>村越祐民｜国政・市政での仕事</span></a>
-<nav class="rp-nav" aria-label="メインナビゲーション"><a href="index.html">概要</a><a href="selected-achievements/">主な仕事と成果</a><a href="index.html#city">市川市長としての4年間</a><a href="index.html#national">国政・外交</a><a href="index.html#assessment">報道と評価</a><a href="profile/">経歴</a><a href="publications/">資料・記録</a><a href="en/">English</a></nav>
+<nav class="rp-nav" aria-label="メインナビゲーション"><a href="index.html">概要</a><a href="selected-achievements/">主な仕事と成果</a><a href="index.html#city">市川市長としての4年間</a><a href="index.html#national">国政・外交</a><a href="index.html#assessment">報道・批判</a><a href="profile/">経歴</a><a href="publications/">資料・記録</a><a href="en/">English</a></nav>
 </div></header>
 <main id="main" class="rp-container">
 <section class="rp-hero" aria-labelledby="main-title">
@@ -162,19 +172,39 @@ body h1,body h2,body h3,body h4{color:var(--rp-ink);line-height:1.48;letter-spac
 <article class="rp-tile"><a href="city-record/digital/"><span class="rp-tile-num">04</span><h3>行政DX</h3><p>来庁不要の手続と行政サービスの再設計</p><span class="rp-tile-more">取り組みを見る →</span></a></article>
 <article class="rp-tile"><a href="city-record/economy/"><span class="rp-tile-num">05</span><h3>地域経済</h3><p>キャッシュレス施策と事業者支援</p><span class="rp-tile-more">取り組みを見る →</span></a></article>
 <article class="rp-tile"><a href="city-record/disaster/"><span class="rp-tile-num">06</span><h3>防災・環境</h3><p>災害への備えと生活環境の改善</p><span class="rp-tile-more">取り組みを見る →</span></a></article>
-<article class="rp-tile"><a href="city-record/facilities/"><span class="rp-tile-num">07</span><h3>公共施設</h3><p>利用負担の見直しと庁舎の機能</p><span class="rp-tile-more">取り組みを見る →</span></a></article>
-<article class="rp-tile"><a href="city-record/culture/"><span class="rp-tile-num">08</span><h3>文化・シビックプライド</h3><p>本や文学、地域文化を通じたまちへの愛着</p><span class="rp-tile-more">取り組みを見る →</span></a></article>
+<article class="rp-tile"><a href="city-record/facilities/"><span class="rp-tile-num">07</span><h3>公共施設</h3><p>利用負担の見直しとサードプレイスの整備</p><span class="rp-tile-more">取り組みを見る →</span></a></article>
+<article class="rp-tile"><a href="city-record/culture/"><span class="rp-tile-num">08</span><h3>文化</h3><p>地域文化を通じたシビックプライドの醸成</p><span class="rp-tile-more">取り組みを見る →</span></a></article>
 <article class="rp-tile"><a href="city-record/international/"><span class="rp-tile-num">09</span><h3>国際交流</h3><p>海外都市との協定、文化発信、企業間交流</p><span class="rp-tile-more">取り組みを見る →</span></a></article></div>
 </section>
 <section class="rp-section rp-divider-top" id="national" aria-labelledby="national-title">
 <h2 id="national-title">国政・外交での仕事</h2>
-<p class="rp-minor">市街地液状化対策事業の制度形成、刑事司法制度改革に関する立法活動、外務大臣政務官としての外交など、国政で取り組んだ仕事を紹介します。</p>
+<p class="rp-minor">市街地液状化対策事業の制度設計、刑事司法制度改革に関する立法活動、外務大臣政務官としての外交など、国政で取り組んだ仕事を紹介します。</p>
 <div class="rp-route-row"><a href="national-record/">国政・外交の取り組みを見る →</a><a href="national/">政策・立法の資料</a><a href="diplomacy/">外交の記録</a></div>
 </section>
 <section class="rp-section rp-divider-top" id="assessment" aria-labelledby="assessment-title">
-<h2 id="assessment-title">報道と市政への評価について</h2>
-<p class="rp-minor">公用車や市長室の設備をめぐる問題についても、当時の判断や手続、報道の内容を資料に基づいて整理します。個々の政策や実績に対する評価についても、記録を確認できるようにします。</p>
-<div class="rp-route-row"><a href="assessment/">関連する記録と論点を見る →</a><a href="https://hirotamimurakoshi.github.io/" target="_blank" rel="noopener noreferrer">訴訟関係の資料公開サイト</a></div>
+<h2 id="assessment-title">報道・批判をめぐる事実関係</h2>
+<p class="rp-minor">在任中から退任後にかけて報道や批判の対象となった三つの問題について、当時の判断や手続、議会での議論、報道内容を資料に基づいて整理します。</p>
+<!-- 下記3リンクは制作予定の下位ページです。全ページが完成するまでは公開しない方針です。 -->
+<div class="rp-issues" aria-label="報道・批判に関する3つのテーマ">
+  <article class="rp-issue" aria-labelledby="issue-tesla-title">
+    <span class="rp-issue-index">01</span>
+    <h3 id="issue-tesla-title">テスラ公用車の導入</h3>
+    <p>導入の目的、選定・契約の経緯、費用、議会での議論や報道内容を資料に基づいて確認します。</p>
+    <a class="rp-issue-link" href="assessment/tesla/">資料と経緯を見る →</a>
+  </article>
+  <article class="rp-issue" aria-labelledby="issue-shower-title">
+    <span class="rp-issue-index">02</span>
+    <h3 id="issue-shower-title">市長室のシャワー設備</h3>
+    <p>設置に至る判断と目的、費用や手続、議会での議論、報道内容を資料に基づいて確認します。</p>
+    <a class="rp-issue-link" href="assessment/shower/">資料と経緯を見る →</a>
+  </article>
+  <article class="rp-issue" aria-labelledby="issue-litigation-title">
+    <span class="rp-issue-index">03</span>
+    <h3 id="issue-litigation-title">「パワハラでっち上げ」報道</h3>
+    <p>市議会での議論と答弁の経緯、報道、名誉毀損訴訟の記録と関連資料を掲載します。</p>
+    <a class="rp-issue-link" href="assessment/litigation/">訴訟記録を見る →</a>
+  </article>
+</div>
 </section>
 <section class="rp-section rp-divider-top" id="sources" aria-labelledby="sources-title">
 <h2 id="sources-title">資料・記録</h2>
