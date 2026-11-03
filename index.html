@@ -62,6 +62,16 @@
     .text-links a{font-size:13px}
     @media(max-width:760px){#finance .portfolio-item:last-child,#childcare .portfolio-item:last-child,#health .portfolio-item:last-child,#digital .portfolio-item:last-child,#economy .portfolio-item:last-child{grid-column:span 1}.metric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.portfolio-grid{grid-template-columns:1fr}.portfolio-item.feature,.national-card{grid-column:span 1}.portfolio-section-head h3{font-size:18px!important}.portfolio-item.feature{padding:18px 19px}.overview-lead{font-size:16px}}
     @media(max-width:390px){.metric-card{padding:15px 12px}.metric-value{font-size:20px}.portfolio-item{padding:16px}.section-links{gap:7px}}
+    .field-index{margin:-6px 0 27px;padding:10px 14px;border:1px solid #dbe4e9;border-radius:7px;background:#fff;color:#36566c}
+    .field-index summary{cursor:pointer;font-size:13px;font-weight:650;line-height:1.8}
+    .field-index[open] summary{margin-bottom:8px}
+    .field-index .section-links{margin:5px 0 6px}
+    .records-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:18px 0 22px}
+    .records-links>div{border:1px solid #dbe4e9;border-radius:7px;padding:17px 19px;background:#fff}
+    .records-links strong{color:#173c58;font-size:15px}
+    .records-links p{color:#546879;font-size:13px;line-height:1.8;margin:9px 0 13px}
+    .records-links a{font-size:13px}
+    @media(max-width:760px){.records-links{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -74,11 +84,10 @@
     </a>
     <nav aria-label="メインナビゲーション">
       <a class="nav-link active" href="./" aria-current="page">概要</a>
+      <a class="nav-link" href="#city">市川市政</a>
+      <a class="nav-link" href="#national">国政・外交</a>
       <a class="nav-link" href="profile/">経歴</a>
-      <a class="nav-link" href="national/">政策・立法</a>
-      <a class="nav-link" href="diplomacy/">外交</a>
-      <a class="nav-link" href="policies/">市川市政</a>
-      <a class="nav-link" href="publications/">掲載資料</a>
+      <a class="nav-link" href="#sources">資料・記録</a>
       <a class="nav-link" href="en/">English</a>
     </nav>
   </div>
@@ -101,22 +110,23 @@
     </div>
   </div>
 
-  <nav class="section-links" aria-label="このページの分野別目次">
-    <a href="#city">市川市政</a>
-    <a href="#finance">財政・生活支援</a>
-    <a href="#childcare">子育て・教育</a>
-    <a href="#health">保健・医療</a>
-    <a href="#digital">行政DX</a>
-    <a href="#economy">地域経済</a>
-    <a href="#disaster">防災・環境</a>
-    <a href="#facilities">公共施設</a>
-    <a href="#culture">文化・歴史</a>
-    <a href="#national">国政・外交</a>
-  </nav>
 
   <section class="section overview-section" id="city" aria-labelledby="city-title">
     <h2 id="city-title">市川市政｜2018–2022年</h2>
-    <p class="portfolio-intro">財政基盤の強化と市民サービスの充実を両立させながら、生活支援、子育て、医療、行政DX、地域経済、防災、文化・歴史などに取り組みました。その主な実績を分野別に紹介します。</p>
+    <p class="portfolio-intro">財政運営、生活支援、子育て、保健・医療、行政DX、地域経済、防災、公共施設、文化・歴史の各分野で実施した施策を紹介します。</p>
+    <details class="field-index">
+      <summary>市川市政の分野から探す</summary>
+      <nav class="section-links" aria-label="市川市政の分野別目次">
+        <a href="#finance">財政・生活支援</a>
+        <a href="#childcare">子育て・教育</a>
+        <a href="#health">保健・医療</a>
+        <a href="#digital">行政DX</a>
+        <a href="#economy">地域経済</a>
+        <a href="#disaster">防災・環境</a>
+        <a href="#facilities">公共施設</a>
+        <a href="#culture">文化・歴史</a>
+    </nav>
+    </details>
 
     <div class="portfolio-section" id="finance">
       <div class="portfolio-section-head"><span class="portfolio-section-index">01</span><h3>財政運営と生活支援</h3></div>
@@ -325,9 +335,20 @@
   </section>
 
   <section class="section" id="sources" aria-labelledby="sources-title">
-    <h2 id="sources-title">報道・公的資料など</h2>
-    <p>各施策には、当時の公文書、決算資料、報道などへのリンクを付けています。関連資料をまとめて確認する場合は、掲載資料のページをご覧ください。</p>
-    <div class="text-links"><a href="publications/">掲載記事・公開資料を見る</a><a href="profile/">経歴を見る</a><a href="en/">English Profile</a></div>
+    <h2 id="sources-title">資料・記録</h2>
+    <p>公職活動の実績に関する資料と、訴訟に関する記録は、内容を分けて公開しています。</p>
+    <div class="records-links">
+      <div>
+        <strong>国政・市政に関する資料</strong>
+        <p>政策・行政の取り組みに関する公文書、決算資料、報道、研究文献など。</p>
+        <a href="publications/">掲載記事・公開資料を見る</a>
+      </div>
+      <div>
+        <strong>訴訟に関する記録</strong>
+        <p>係属中の事件を含む訴訟の経緯や、裁判資料を別サイトに掲載しています。</p>
+        <a href="https://hirotamimurakoshi.github.io/" target="_blank" rel="noopener noreferrer">公的資料・訴訟記録（別サイト）<span aria-hidden="true" class="external">↗</span></a>
+      </div>
+    </div>
     <div class="source-footer">
       <p><strong>記述について</strong>　このサイトは村越祐民本人が運営し、国政・市政における活動と成果を、関係資料とともに紹介しています。</p>
       <p>構想・計画と実施済みの施策は区別して記載しています。財政調整基金の数値は各年度末の残高、給付金の「約4万世帯」「約40.7億円」は制度創設時の対象見込みと予算額です。</p>
@@ -337,7 +358,7 @@
   <section class="section" id="about" aria-labelledby="about-title">
     <h2 id="about-title">このサイトについて</h2>
     <p>当時の資料と照らし合わせながら政策・行政の仕事を記録しています。新たな資料が確認できた場合は、記述を更新します。</p>
-    <p>訴訟に関する経緯と資料は、別サイト<a href="https://hirotamimurakoshi.github.io/" target="_blank" rel="noopener noreferrer">「公的資料・訴訟記録」<span aria-hidden="true" class="external">↗</span></a>に掲載しています。</p>
+
   </section>
 </main>
 <footer><div class="footer-inner"><p>© 2026 Hirotami Murakoshi</p><p>Public service &amp; policy record / 2011–2022</p></div></footer>
